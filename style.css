@@ -17,3 +17,80 @@
 .border-primary {
   border-color: #323e4f !important;
 }
+
+.popover-container {
+  position: relative;
+  display: inline;
+}
+
+.popover {
+  position: absolute;
+  transition: all 0.2s ease-in-out;
+  opacity: 0;
+  transform: scale(0.9);
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.popover.show {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.popover.hidden {
+  display: none;
+}
+
+.popover.top-right {
+  top: -1rem;
+  left: calc(100% + 1rem);
+  transform-origin: top left;
+}
+
+.popover.top-left {
+  top: -1rem;
+  right: calc(100% + 1rem);
+  transform-origin: top right;
+}
+
+.thumbnail {
+  padding: 0.25rem;
+  background: #fff;
+  border: 1px solid #788daa;
+  border-radius: 0.25rem;
+  width: 200px;
+  height: 200px;
+}
+
+.thumbnail img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 0.25rem;
+}
+
+/* thin scrollbar */
+::-webkit-scrollbar {
+  width: 0.5rem;
+}
+
+::-webkit-scrollbar-track {
+  background: #fff;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #ccc;
+  border-radius: 0.25rem;
+  transition: 0.3s ease-in-out;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #999;
+}
+
+::-webkit-scrollbar-thumb:active {
+  background: #666;
+}
+
+::-webkit-scrollbar-thumb:focus {
+  background: #666;
+}
