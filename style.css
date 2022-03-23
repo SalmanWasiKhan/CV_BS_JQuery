@@ -1,0 +1,19 @@
+* {
+  box-sizing: border-box;
+}
+
+.bg-primary {
+  background-color: #333f50 !important;
+}
+
+.text-primary {
+  color: #323e4f !important;
+}
+
+.text-muted {
+  color: #595959 !important;
+}
+
+.border-primary {
+  border-color: #323e4f !important;
+}
